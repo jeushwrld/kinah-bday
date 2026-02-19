@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Baby Kinah 🎂</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .cake {
+            font-size: 120px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .cake:hover {
+            transform: scale(1.2);
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 20px;
+            display: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            background-color: white;
+            color: #ff4b7d;
+            margin-top: 20px;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffe6f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Happy Birthday My Baby Kinah 🎉</h1>
+
+
+        <div class="cake" onclick="showMessage()">🎂</div>
+
+        <div class="message" id="birthdayMessage">
+            <p>
+                I wish you long life, happiness, and all your dreams to come true.
+                Thank you for your love, patience, and understanding.
+                I’m so lucky to have you. I love you always 💖
+            </p>
+        </div>
+
+        <button onclick="playMusic()">Play Birthday Song 🎵</button>
+
+        <audio id="music">
+            <source src="./music/Happy Birthday Song 🎂🎶Birthday Song for Everyone.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("birthdayMessage").style.display = "block";
+        }
+
+        function playMusic() {
+            document.getElementById("music").play();
+        }
+    </script>
+</body>
+</html>
